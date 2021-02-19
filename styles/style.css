@@ -4,6 +4,7 @@ html{
 
 body{
     margin: 20px;
+    font-family: 'Source Code Pro', monospace;
 }
 
 nav{
@@ -62,7 +63,7 @@ nav ul{
 
 .presentation-texte {
     text-align: justify;
-    font-size: 30px;
+    font-size: 22px;
     align-items: center;
     display: flex;
 }
