@@ -5,6 +5,7 @@ html{
 body{
     margin: 20px;
     font-family: 'Source Code Pro', monospace;
+    color: white;
 }
 
 nav{
@@ -24,6 +25,7 @@ nav{
 
 h1{
     font-family: 'Truculenta', sans-serif;
+    color: black;
     font-size: 50px;
     margin-left: 20px;
 }
@@ -36,7 +38,6 @@ nav ul{
 }
 
 #presentation{
-    width: 40%;
     margin: auto;
 }
 
@@ -68,9 +69,8 @@ nav ul{
     display: flex;
 }
 
-.container-contenu{
-    width: 25%;
-    display:inline-block;
+.wrapper{
+    display:grid;
     margin:20px;
     padding: 20px;
     background-color: blueviolet;
@@ -79,7 +79,8 @@ nav ul{
 }
 
 #container{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 #buttons{
@@ -100,7 +101,8 @@ h3{
 }
 
 .logo-projet img{
-    width: 150px;
+    width: 100px;
+    height: 100px;
 }
 
 .container-contenu p{
@@ -113,8 +115,9 @@ h3{
     font-size: 30px;
 }
 
-.description{
-
+.desc-projet p{
+    text-align: center;
+    color: white;
 }
 
 .button{
@@ -147,4 +150,23 @@ h3{
 .myButton:active {
     position:relative;
     top:1px;
+}
+
+@media (max-width: 935px) {
+    .wrapper{
+        justify-self: center;
+        width: 50%;
+    }
+
+    #container{
+        grid-template-columns: 3fr;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+
+    .presentation-texte{
+        font-size: 17px;
+    }
 }
