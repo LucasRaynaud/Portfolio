@@ -152,7 +152,7 @@ h3{
     top:1px;
 }
 
-@media (max-width: 935px) {
+@media (max-width: 375px) {
     .wrapper{
         justify-self: center;
         width: 50%;
