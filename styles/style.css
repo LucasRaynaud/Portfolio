@@ -46,26 +46,27 @@ nav ul{
 }
 
 #presentation-block-image{
-    width: 100%;
+    width: 40%;
     padding:10px;
     display: block;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: auto;
 }
 
 #presentation-block-infos{
     padding :20px;
+    width: 45%;
 }
 
 #presentation-block-image img{
     border-radius: 20%;
-    width: 200px;
-    }
+    width: 60%;
+    display: block;
+    margin: auto;
+}
 
 .presentation-texte {
     text-align: justify;
     font-size: 22px;
-    align-items: center;
     display: flex;
 }
 
@@ -152,7 +153,13 @@ h3{
     top:1px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 900px) {
+
+    #presentation-block-infos{
+        margin:auto;
+        width : 80%;
+    }
+
     .wrapper{
         justify-self: center;
         width: 50%;
@@ -162,11 +169,36 @@ h3{
         grid-template-columns: 3fr;
     }
 
+    h1 {
+        font-size: 60px;
+    }
+
+    h2{
+        font-size: 40px;
+    }
+
     h3{
-        font-size: 20px;
+        font-size: 40px;
     }
 
     .presentation-texte{
-        font-size: 17px;
+        font-size: 30px;
+    }
+
+    #presentation-block{
+        display: block;
+    }
+
+    #presentation-block-image{
+        width: 80%;
+    }
+
+    .desc-projet p {
+        font-size: 25px;
+    }
+
+    .logo-projet img{
+        width: 150px;
+        height: 150px;
     }
 }
