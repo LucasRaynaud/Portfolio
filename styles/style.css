@@ -155,6 +155,15 @@ h3{
     top:1px;
 }
 
+footer{
+    padding : 10px;
+    background-color: #101D42;
+}
+
+footer p {
+    text-align: center;
+}
+
 @media screen and (max-width: 1081px) {
 
     #presentation-block-infos{
