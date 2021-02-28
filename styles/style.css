@@ -89,7 +89,6 @@ nav ul{
     text-align: center;
     padding: 10px;
     border-radius: 30%;
-    font-size: 20px;
     margin: auto;
 }
 
@@ -120,11 +119,13 @@ h3{
 .desc-projet p{
     text-align: center;
     color: white;
+    font-size: 20px;
 }
 
 .button{
     display: flex;
     justify-content: center;
+    font-size: 30px;
 }
 
 .button p{
@@ -195,11 +196,15 @@ h3{
     }
 
     .desc-projet p {
-        font-size: 25px;
+        font-size: 40px;
     }
 
     .logo-projet img{
         width: 150px;
         height: 150px;
+    }
+
+    .myButton{
+        font-size: 40px;
     }
 }
